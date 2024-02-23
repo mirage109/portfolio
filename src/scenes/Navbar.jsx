@@ -19,12 +19,13 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   );
 };
 
-const Navbar = ({ selectedPage, setSelectedPage }) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuTooggled, setIsMenuTooggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+  const navBarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={`z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navBarBackground}z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">AZ</h4>
         {isAboveSmallScreens ? (
@@ -66,9 +67,36 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         {!isAboveSmallScreens && isMenuTooggled && (
           <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
             <div className="flex justify-end p-12">
-                <button onClick={() => setIsMenuTooggled(!isMenuTooggled)}>
+              <button onClick={() => setIsMenuTooggled(!isMenuTooggled)}>
                 <img alt="close-icon" src={closeIcon} />
-                </button>
+              </button>
+            </div>
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
+              <Link
+                page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Skills"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Projects"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Testimonials"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contact"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
             </div>
           </div>
         )}

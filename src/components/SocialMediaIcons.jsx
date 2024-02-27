@@ -1,5 +1,7 @@
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
+import mail from "../assets/mail.png";
+import whats from "../assets/whats.png";
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
@@ -9,7 +11,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src={linkedin} alt="linkedin" />
+        <img className="w-[30px]"src={linkedin} alt="linkedin" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -17,15 +19,18 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img className="w-[30px] "src={github} alt=""/>
+        <img className="w-[30px]" src={github} alt=""/>
       </a>
-      {/* <a href="mailto:zibla.asia@gmail.com" 
+      <a href="mailto:zibla.asia@gmail.com" 
       className="hover:opacity-50 transition duration-500"
       target="_blank"
       rel="noreferrer"
       >
-        <img className="w-[35px]" src={mail} alt="email" />
-      </a> */}
+        <img className="w-[30px]" src={mail} alt="email" />
+      </a>
+<a href="tel:+380 99 999 99 99">
+        <img className="w-[30px]" src={whats} alt="phone" />
+</a>
     </div>
   );
 };

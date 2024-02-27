@@ -35,13 +35,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-             <Link
-              page="About"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
             <Link
-              page="Skills"
+              page="About Me"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -51,12 +46,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Education"
+              page="Skills"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+
+            <a target="_blank" href="https://drive.google.com/file/d/1cqG2AgNOYKqY0qLyIKNUmY6OzNV-ANcU/view?usp=sharing">
+              CV
+            </a>
+
             <Link
-              page="Contact"
+              page="Contact Me"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

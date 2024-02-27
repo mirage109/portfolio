@@ -51,7 +51,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
 
-            <a target="_blank" href="https://drive.google.com/file/d/1cqG2AgNOYKqY0qLyIKNUmY6OzNV-ANcU/view?usp=sharing">
+            <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1cqG2AgNOYKqY0qLyIKNUmY6OzNV-ANcU/view?usp=sharing">
               CV
             </a>
 

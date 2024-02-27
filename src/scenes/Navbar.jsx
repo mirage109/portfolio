@@ -51,7 +51,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
 
-            <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1cqG2AgNOYKqY0qLyIKNUmY6OzNV-ANcU/view?usp=sharing">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1cqG2AgNOYKqY0qLyIKNUmY6OzNV-ANcU/view?usp=sharing"
+            >
               CV
             </a>
 
@@ -78,12 +82,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             </div>
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
               <Link
-                page="Home"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Skills"
+                page="About Me"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
@@ -93,12 +92,21 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Testimonials"
+                page="Skills"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
+
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://drive.google.com/file/d/1cqG2AgNOYKqY0qLyIKNUmY6OzNV-ANcU/view?usp=sharing"
+              >
+                CV
+              </a>
+
               <Link
-                page="Contact"
+                page="Contact Me"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />

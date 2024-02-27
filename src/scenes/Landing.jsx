@@ -56,14 +56,6 @@ const Landing = ({ setSelectedPage }) => {
             I'm a Frontend Developer with a passion for crafting captivating
             digital experiences and I'am constantly working on honing my coding skills to create innovative and user-friendly web applications.
           </p>
-          {/* <ul className="flex flex-row mb-5 text-sm justify-center gap-12 font-semibold text-red">
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>HTML</li>
-            <li>CSS</li>
-           </ul> */}
            
         </motion.div>
         <motion.div
@@ -78,16 +70,17 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            href="#contact"
+           
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
                 hover:bg-blue hoover:text-white transition duration-500"
-            onClick={() => setSelectedPage("contact")}
+            // onClick={() => setSelectedPage("contact")}
+            href="#contact"
           >
             Contact me
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
+            // onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">

@@ -19,6 +19,13 @@ const SocialMediaIcons = () => {
       >
         <img className="w-[30px] "src={github} alt=""/>
       </a>
+      {/* <a href="mailto:zibla.asia@gmail.com" 
+      className="hover:opacity-50 transition duration-500"
+      target="_blank"
+      rel="noreferrer"
+      >
+        <img className="w-[35px]" src={mail} alt="email" />
+      </a> */}
     </div>
   );
 };

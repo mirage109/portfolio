@@ -9,7 +9,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 const Skills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" className="pt-5 pb-24">
       <div className="md:flex flex-col justify-center md:gap-16 mt-32 ">
         <motion.div
           className="md:w-3/4"

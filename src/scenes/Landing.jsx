@@ -72,19 +72,19 @@ const Landing = ({ setSelectedPage }) => {
           <AnchorLink
            
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-                hover:bg-blue hoover:text-white transition duration-500"
+                hover:bg-blue hoover:text-white transition duration-500 w-[40%] text-center"
             // onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 w-[40%]"
             // onClick={() => setSelectedPage("contact")}
-            href="#contact"
+            href="#projects"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
+            <div className="bg-deep-blue  hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+              My projects
             </div>
           </AnchorLink>
         </motion.div>

@@ -21,7 +21,7 @@ const TechStack = () => {
       className="border-2 border-blue px-12"
     >
       <h3 className="font-semibold text-2xl mt-10 mb-16">Tech Stack</h3>
-      <ul className="mb-5 flex flex-wrap gap-12 font-semibol">
+      <ul className="mb-5 flex flex-wrap justify-around gap-12 font-semibol">
         <li>
           <img src={javaScript} alt="JavaScript" />
           JavaScript
@@ -54,6 +54,7 @@ const TechStack = () => {
           <img className="w-[48px]" src={mobx} alt="MobX" />
           MobX
         </li>
+        
       </ul>
     </motion.div>
   );

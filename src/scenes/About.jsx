@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="pt-10 pb-24 ">
       <div className="md:flex justify-center md:gap-16 mt-32">
         <motion.div
-          className="md:w-2/3"
+          className="md:w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -25,7 +25,7 @@ const About = () => {
       <div className="md:flex justify-center md:gap-16">
         
         <motion.div
-          className="md:w-2/3 text-xl"
+          className="text-xl"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}

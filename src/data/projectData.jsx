@@ -1,13 +1,14 @@
 import gymImage from "../assets/gym.png";
 import hangImage from "../assets/hangman.png";
 import space from "../assets/space.png";
+
 const projectData = [
   {
     title: "Garden Online Shop",
     stack: "JavaScript, React, Redux Toolkit, Routing, CSS",
     description:
       "The project is written in JavaScript and React, using Redux Toolkit and other third-party NPM packages. It includes a product filtering system that recalculates costs based on the removal/addition of products, as well as integration with the backend and other APIs.",
-    img: "https://i.ibb.co/0XWkYtN/zibla.png",
+    img: "https://via.placeholder.com/300",
     link: "https://zibla.netlify.app/",
     codeLink: "https://github.com/mirage109/Project_gargen",
   },
@@ -33,7 +34,7 @@ const projectData = [
   {
     title : "Hangman Game",
     stack: "React, TypeScript, Vite",
-    description: "The project is written in React, using TypeScript, and Vite. It includes a game logic, a game board, and a game over screen. You can play the game by clicking the link below.",
+    description: "The Hangman Game is a classic word-guessing game where players try to guess a hidden word letter by letter, while avoiding making too many incorrect guesses before completing the word or phrase. It's a popular game for language learning and vocabulary building, often enjoyed by players of all ages. The project is written in React, using TypeScript, and Vite. It includes a game logic, a game board, and a game over screen. You can play the game by clicking the link below.",
     img: hangImage,
     link: "https://hang-man-cheery.netlify.app/",
     codeLink: "https://github.com/mirage109/hang-man"

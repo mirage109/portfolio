@@ -72,7 +72,7 @@ const Landing = ({ setSelectedPage }) => {
           <AnchorLink
            
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-                hover:bg-blue hoover:text-white transition duration-500 w-[40%] text-center"
+                hover:bg-blue hover:text-white transition duration-500 w-[40%] text-center"
             // onClick={() => setSelectedPage("contact")}
             href="#contact"
           >

@@ -1,10 +1,11 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import me from "../assets/about.jpg";
 const About = () => {
 
   return (
     <section id="about" className="pt-10 pb-24 ">
-      <div className="md:flex justify-center md:gap-16 mt-32">
+      <div className="md:flex justify-center md:gap-16 mt-36">
         <motion.div
           className="md:w-full"
           initial="hidden"
@@ -23,9 +24,21 @@ const About = () => {
         </motion.div>
       </div>
       <div className="md:flex justify-center md:gap-16">
-        
         <motion.div
-          className="text-xl"
+          className="md:w-1/4 "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <img src={me} alt="Anastasiia Zibla" className="rounded-2xl mt-16 mb-7 hover:filter hover:saturate-150" />
+        </motion.div>
+        <motion.div
+          className="text-xl md:w-3/4 "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -35,8 +48,7 @@ const About = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="mt-10 mb-7"> Hey there! I'm Anastasiia Zibla.</p>
-          <p className="my-4">
+          <p className="my-4 mt-16 mb-7">
             In 2022, I made the move to Germany. It was there that I decided to
             pivot my career and delve into the realm of IT, specifically honing
             my skills in frontend development.

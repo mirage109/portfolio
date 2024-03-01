@@ -1,15 +1,16 @@
 import gymImage from "../assets/gym.png";
 import hangImage from "../assets/hangman.png";
 import space from "../assets/space.png";
+import garden from "../assets/garden.png";
 
 const projectData = [
   {
     title: "Garden Online Shop",
     stack: "JavaScript, React, Redux Toolkit, Routing, CSS",
     description:
-      "The project is written in JavaScript and React, using Redux Toolkit and other third-party NPM packages. It includes a product filtering system that recalculates costs based on the removal/addition of products, as well as integration with the backend and other APIs.",
-    img: "https://via.placeholder.com/300",
-    link: "https://zibla.netlify.app/",
+      "The Garden Online Shop project is written in JavaScript and React, utilizing Redux Toolkit and other third-party NPM packages. It features a product filtering system that recalculates costs based on the addition/removal of products, as well as integration with the backend and other APIs. Additionally, the project includes a shopping cart for adding and removing items, and sending requests to the backend to perform respective operations.",
+    img: garden,
+    link: "https://garden-shop.netlify.app/",
     codeLink: "https://github.com/mirage109/Project_gargen",
   },
   {

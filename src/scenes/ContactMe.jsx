@@ -19,7 +19,7 @@ const ContactMe = () => {
 
   return (
     <section id="contact" className="py-48">
-         {/* HEADINGS */}
+      {/* HEADINGS */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -75,7 +75,7 @@ const ContactMe = () => {
             method="POST"
           >
             <input
-              className="w-full bg-white font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-white text-black font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -91,7 +91,7 @@ const ContactMe = () => {
             )}
 
             <input
-              className="w-full bg-white font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-white  text-black font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -107,7 +107,7 @@ const ContactMe = () => {
             )}
 
             <textarea
-              className="w-full bg-white font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-white  text-black  font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -135,8 +135,7 @@ const ContactMe = () => {
           </form>
         </motion.div>
       </div>
-
     </section>
-  )
+  );
 };
 export default ContactMe;

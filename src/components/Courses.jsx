@@ -3,14 +3,17 @@ import typeScript from "../assets/typescript.png";
 import { motion } from "framer-motion";
 const Courses = () => {
   return (
-    <motion.div initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.5 }}
-    transition={{ duration: 0.5 }}
-    variants={{
-      hidden: { opacity: 0, y:-50 },
-      visible: { opacity: 1, y: 0 },
-    }}className="border-2 border-red px-12 pb-12">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ delay: 0.2, duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, x: 50 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      className="border-2 border-red px-12 pb-12"
+    >
       <h3 className="font-semibold text-2xl mt-10 mb-5">
         Courses & Certifications
       </h3>

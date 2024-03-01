@@ -18,18 +18,27 @@ const Courses = () => {
         Courses & Certifications
       </h3>
       <ul className="flex flex-col gap-2">
-        <li className="flex flex-row items-center">
+        <li className="flex flex-row items-center  hover:text-blue">
           <img src={cloud} alt="Google Cloud" />
+          <a href="https://www.cloudskillsboost.google/public_profiles/e3a1abc8-5846-4288-9ca2-e7649d1da021/badges/8033738?locale=uk" target="_blank" rel="noreferrer"
+          >
           Google Cloud - Generative AI Fundamentals
+          </a>
         </li>
-        <li className="flex flex-row items-center">
-          <img src={cloud} alt="Google Cloud" />
-          Google Cloud - Begin with Workspace Essentials
+        <li className="flex flex-row items-center hover:text-blue">
+        <img src={cloud} alt="Google Cloud" />
+          <a href="https://www.cloudskillsboost.google/public_profiles/e3a1abc8-5846-4288-9ca2-e7649d1da021/badges/8111659?locale=uk" target="_blank" rel="noreferrer"
+          >
+            Google Cloud - Begin with Workspace Essentials
+          </a>
         </li>
-        <li className="flex flex-row items-center">
+        <li className="flex flex-row items-center hover:text-blue">
           {" "}
           <img src={typeScript} alt="TypeScript" />
+          <a href="https://testprovider.com/ru/search-certificate/tp06895774" target="_blank" rel="noreferrer"
+          >
           FEB 2024 - TypeScript course ITVDN
+          </a>
         </li>
         <li>JAN 2024 - IT English - English Dom </li>
       </ul>

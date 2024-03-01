@@ -11,7 +11,7 @@ const Projects = () => {
         <LineGradient width="w-2/5 " />
       </div>
       {projectData.map((project, index) => (
-        <ProjectItem key={index} {...project} />
+        <ProjectItem key={index} index={index} {...project} />
       ))}
     </section>
   );

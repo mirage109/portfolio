@@ -41,7 +41,8 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <Landing selectedPage={selectedPage} />
+        <Landing  
+            setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">

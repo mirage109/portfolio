@@ -3,6 +3,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import menuIcon from "../assets/menu-icon.svg";
 import closeIcon from "../assets/close-icon.svg";
+import { useEffect, useRef} from "react";
+
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -23,11 +25,41 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuTooggled, setIsMenuTooggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const navBarBackground = isTopOfPage ? "" : "bg-red";
+  const observer = useRef(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setSelectedPage(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => observer.current.observe(section));
+
+    return () => {
+      if (observer.current) {
+        observer.current.disconnect();
+      }
+    };
+  }, [setSelectedPage]);
 
   return (
     <nav className={`${navBarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">AZ</h4>
+        <h4 className="font-playfair text-3xl font-bold">
+        <AnchorLink
+           onClick={() => setSelectedPage("home")}
+           href="#home"
+         >
+          AZ
+          </AnchorLink>
+          </h4>
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-12 font-opensans text-sm font-semibold">
             <Link

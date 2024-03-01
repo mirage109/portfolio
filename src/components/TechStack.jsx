@@ -21,36 +21,36 @@ const TechStack = () => {
       className="border-2 border-blue px-12"
     >
       <h3 className="font-semibold text-2xl mt-10 mb-16">Tech Stack</h3>
-      <ul className="mb-5 flex flex-wrap justify-around gap-12 font-semibol">
-        <li>
+      <ul className="mb-5 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-12 font-semibold">
+        <li className="flex flex-col items-center justify-center">
           <img src={javaScript} alt="JavaScript" />
           JavaScript
         </li>
-        <li>
+        <li className="flex flex-col items-center justify-center">
           <img src={typeScript} alt="TypeScript" />
           TypeScript
         </li>
-        <li>
+        <li className="flex flex-col items-center justify-center">
           <img src={react} alt="React" />
           React
         </li>
-        <li>
+        <li className="flex flex-col items-center justify-center">
           <img src={html} alt="HTML" />
           HTML
         </li>
-        <li>
+        <li className="flex flex-col items-center justify-center">
           <img src={css} alt="CSS" />
           CSS
         </li>
-        <li>
+        <li className="flex flex-col items-center justify-center">
           <img src={tailwind} alt="Tailwind CSS" />
-          Tailwind CSS
+          Tailwind
         </li>
-        <li>
+        <li className="flex flex-col items-center justify-center">
           <img src={redux} alt="Redux" />
           Redux
         </li>
-        <li>
+        <li className="flex flex-col items-center justify-center">
           <img className="w-[48px]" src={mobx} alt="MobX" />
           MobX
         </li>

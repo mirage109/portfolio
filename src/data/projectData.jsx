@@ -2,8 +2,18 @@ import gymImage from "../assets/gym.png";
 import hangImage from "../assets/hangman.png";
 import space from "../assets/space.png";
 import garden from "../assets/garden.png";
+import intern from "../assets/interno.png";
 
 const projectData = [
+  {
+    title: "Interno - Interior Design",
+    stack: "HTML, JavaScript,Tailwind CSS",
+    description:
+      "Beautifully designed and fully responsive landing page for an interior design company. The project is written in HTML, JavaScript, and Tailwind CSS. The project is fully responsive and has been tested on various devices. You can view the project by clicking the link below.",
+    img: intern,
+    link: "https://interno-landing.netlify.app/",
+    codeLink: "https://github.com/mirage109/Interno",
+  },
   {
     title: "Garden Online Shop",
     stack: "JavaScript, React, Redux Toolkit, Routing, CSS",

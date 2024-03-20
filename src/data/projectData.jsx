@@ -3,6 +3,7 @@ import hangImage from "../assets/hangman.png";
 import space from "../assets/space.png";
 import garden from "../assets/garden.png";
 import intern from "../assets/interno.png";
+import dog from "../assets/dog.png";
 
 const projectData = [
   {
@@ -27,7 +28,7 @@ const projectData = [
     title: "Space Expatriate Game",
     stack: "React, TypeScript, MobX, SASS, OOP",
     description:
-      "Task was to transfer a board game online. The Space Expatriate Gameis a project that my colleagues and I have been working on for 2 months. We are developing it using React, TypeScript, MobX, and conducting Jest tests. Currently in the development phase, we plan to add the possibility for at least 2 players. ",
+      "Task was to transfer a board game online. The Space Expatriate Game is a project that my colleagues and I have been working on for 2 months. We are developing it using React, TypeScript, MobX, and conducting Jest tests. Currently in the development phase, we plan to add the possibility for at least 2 players. ",
     img: space,
     link: "https://igmat.github.io/SpaceExpatriateReact/",
     codeLink: "https://github.com/Igmat/SpaceExpatriateReact",
@@ -35,12 +36,21 @@ const projectData = [
   {
     title: "Gym Website",
     stack:
-      "React, Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link Smooth Scroll",
+      "React, Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link ",
     description:
       "The project is written in React, using TypeScript, Vite, and Tailwind. It includes a smooth scroll to the anchor link, a form submit, and a hamburger menu with a smooth animation.",
     img: gymImage,
     link: "https://gym-tailwind-practice.netlify.app/",
     codeLink: "https://github.com/mirage109/gym-typescript",
+  },
+  {
+    title: "Pet Grooming Site",
+    stack: "React, Tailwind, Swiper",
+    description:
+      "The project is written in React, using Tailwind CSS and Swiper. It's learning project for me to practice Tailwind CSS and Swiper. You can view the project by clicking the link below.",
+    img:dog,
+    link: "https://pet-grooming-1.netlify.app/",
+    codeLink: "https://github.com/mirage109/pet-grooming",
   },
   {
     title : "Hangman Game",

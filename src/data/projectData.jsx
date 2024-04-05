@@ -48,7 +48,7 @@ const projectData = [
     title:"Nike Landing Page",
     stack: "React, Tailwind CSS",
     description: "The project is written in React, using Tailwind CSS. Landing page for Nike. You can view the project by clicking the link below.",
-    img: {nike},
+    img: nike,
     link: "https://nike-landingp.netlify.app/",
     codeLink: "https://github.com/mirage109/nike"
   },

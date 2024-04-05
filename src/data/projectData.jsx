@@ -4,11 +4,12 @@ import space from "../assets/space.png";
 import garden from "../assets/garden.png";
 import intern from "../assets/interno.png";
 import dog from "../assets/dog.png";
+import nike from "../assets/nike.png";
 
 const projectData = [
   {
     title: "Interno - Interior Design",
-    stack: "HTML, JavaScript,Tailwind CSS",
+    stack: "HTML, JavaScript, Tailwind CSS",
     description:
       "Beautifully designed and fully responsive landing page for an interior design company. The project is written in HTML, JavaScript, and Tailwind CSS. The project is fully responsive and has been tested on various devices. You can view the project by clicking the link below.",
     img: intern,
@@ -42,6 +43,14 @@ const projectData = [
     img: gymImage,
     link: "https://gym-tailwind-practice.netlify.app/",
     codeLink: "https://github.com/mirage109/gym-typescript",
+  },
+  {
+    title:"Nike Landing Page",
+    stack: "React, Tailwind CSS",
+    description: "The project is written in React, using Tailwind CSS. Landing page for Nike. You can view the project by clicking the link below.",
+    img: {nike},
+    link: "https://nike-landingp.netlify.app/",
+    codeLink: "https://github.com/mirage109/nike"
   },
   {
     title: "Pet Grooming Site",

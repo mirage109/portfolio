@@ -5,6 +5,7 @@ import garden from "../assets/garden.png";
 import intern from "../assets/interno.png";
 import dog from "../assets/dog.png";
 import nike from "../assets/nike.png";
+import summ from "../assets/summ.png";
 
 const projectData = [
   {
@@ -51,6 +52,14 @@ const projectData = [
     img: nike,
     link: "https://nike-landingp.netlify.app/",
     codeLink: "https://github.com/mirage109/nike"
+  },
+  {
+    title: "Article Summarizer",
+    stack: "React, OpenAI GPT-4, Tailwind CSS",
+    description:"Summarize Articles with OpenAI GPT-4. Simplify long articles into short summaries with the help of AI's.",
+    img: summ,
+    link:"https://summurizer-asia.netlify.app/",
+    codeLink:"https://github.com/mirage109/summarize"
   },
   {
     title: "Pet Grooming Site",

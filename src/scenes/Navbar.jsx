@@ -86,7 +86,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1cqG2AgNOYKqY0qLyIKNUmY6OzNV-ANcU/view?usp=sharing"
+              href="https://drive.google.com/file/d/1HxfaZ4sIq88jHoEC2kQCnOdlxCnZ7RaU/view?usp=sharing"
             >
               CV
             </a>
